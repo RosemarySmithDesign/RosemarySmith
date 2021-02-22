@@ -509,7 +509,7 @@ h1.white-text{
 
 }
 
-/* *******slider********* */
+
 
 
 
@@ -517,7 +517,7 @@ h1.white-text{
 
 
 /* MOBILE FORMAT */
-@media screen and (max-width: 624px) {
+@media screen and (max-width: 650px) {
 
   p{
     font-size: 1.2rem;
@@ -536,11 +536,12 @@ h1.white-text{
 
   .contact-icon{
     float: none;
+
   }
 
   .contact-row{
     flex: none;
-    display: inline-block;
+display: block;
     margin-bottom: 20px;
   }
 
