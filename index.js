@@ -44,7 +44,7 @@ function onScroll(event){
     $('.menu-center a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top < scrollPos+180 && refElement.position().top + refElement.height() > scrollPos) {
+        if (refElement.position().top < scrollPos+200 && refElement.position().top + refElement.height() > scrollPos) {
             $('.menu-center ul li a').removeClass("active");
             currLink.addClass("active");
         }
@@ -52,4 +52,12 @@ function onScroll(event){
             currLink.removeClass("active");
         }
     });
-}
+
+    }
+
+
+$(document).ready(function(){
+$('.navbar-light > button').on('click', function(){
+    $('.navbar-light').toggleClass('color-changed');
+});
+});
