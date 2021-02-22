@@ -59,7 +59,7 @@ a{
 }
 
 a:hover{
-  color: rgb(0, 138, 138);
+  color: grey;
 }
 
 a.white-text:hover{
@@ -67,7 +67,7 @@ a.white-text:hover{
 }
 
 a h5.white-text:hover{
-  color: rgb(0, 138, 138);
+  color: grey;
 }
 
 button{
@@ -76,10 +76,10 @@ button{
 }
 
 button:hover{
-  color: rgb(0, 138, 138);
+  color: grey;
   text-decoration: underline;
-  text-decoration-color: rgb(0, 138, 138);
-  text-decoration-thickness: 1px;
+  text-decoration-color: grey;
+  text-decoration-thickness: 4px;
   text-underline-offset: 3px;
   margin-bottom: 35px;
 }
@@ -114,11 +114,15 @@ button:focus {outline:0;}
 }
 
 .navbar {
-  background-color: rgba(100%, 100%, 100%, 80%);
+  background-color: rgba(100%, 100%, 100%, 90%);
 }
 
 .top-of-page{
   background-color: transparent;
+}
+
+.navbar-light.color-changed{
+background-color:rgba(100%, 100%, 100%, 90%)!important;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -297,8 +301,10 @@ h1.white-text{
   max-width: 50%;
   position: relative;
   text-align: left;
-  padding:0 !important;
-  margin-top:-6px;
+}
+
+.beer-slider{
+  margin-bottom: -6px!important;
 }
 
 
@@ -423,7 +429,7 @@ h1.white-text{
 
 .top-box-history{
   min-width: 100%;
-  background-color: rgb(80, 130, 190);
+  background-color: rgb(100, 150, 210);
   padding: 100px 5% 10px 5%;
   display: flex;
 }
@@ -451,7 +457,7 @@ h1.white-text{
 
 .top-box-illos{
   min-width: 100%;
-  background-color: rgb(80, 120, 120);
+  background-color: rgb(100, 140, 140);
   padding: 100px 5% 40px 5%;
   display: flex;
 }
@@ -509,6 +515,21 @@ h1.white-text{
 /* MOBILE FORMAT */
 @media screen and (max-width: 624px) {
 
+  p{
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  li.bullet-list{
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .contact-box{
+    padding: 45px auto 150px auto;
+
+  }
+
   .contact-icon{
     float: none;
   }
@@ -525,7 +546,7 @@ h6{
 
 .me-pic{
   float: none;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .intro-text{
