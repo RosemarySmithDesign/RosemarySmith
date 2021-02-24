@@ -61,3 +61,7 @@ $('.navbar-light > button').on('click', function(){
     $('.navbar-light').toggleClass('color-changed');
 });
 });
+
+
+
+$('#myModal').modal('handleUpdate')

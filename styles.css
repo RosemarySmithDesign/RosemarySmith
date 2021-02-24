@@ -13,6 +13,7 @@ h2{
   font-weight: 400;
   font-size: 2rem;
   line-height: 1.4;
+  margin-bottom: 20px;
 }
 
 h3{
@@ -152,11 +153,18 @@ background-color:rgba(100%, 100%, 100%, 90%)!important;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+a.dropdown-item.active{
+ background-color: white;
+ color:rgb(180,180,180);
+
+}
+
+
 #toTopBtn {
   position: fixed;
   bottom: 26px;
   right: 4%;
-  z-index: 99;
+  z-index: 998;
   padding: 21px;
   background-color: #white;
   border-radius: 100%;
@@ -206,14 +214,13 @@ INTRO BOX */
  padding-right: 10%;
 }
 
-.intro-text{
-  padding-top: 30px;
-}
 
 .me-pic{
-  height:300px;
-  margin-left: 50px;
+  max-width: 30%;
+  max-height: 200px;
+  margin:  0 0 50px 50px;
   float: right;
+  border-radius: 100%;
 }
 
 .down-arrow{
@@ -298,6 +305,7 @@ h1.white-text{
   max-width: 33.33333333%;
   position: relative;
   text-align: left;
+  padding: 0;
 }
 
 .column-2 {
@@ -305,6 +313,7 @@ h1.white-text{
   max-width: 50%;
   position: relative;
   text-align: left;
+  padding: 0;
 }
 
 .beer-slider{
@@ -323,9 +332,13 @@ h1.white-text{
   width: 100%;
 }
 
+.square-pic{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .square-pic:hover{
-  opacity: 0.5;
-  position: relative;
+  opacity: 0.7;
 }
 
 .port-link{
@@ -454,7 +467,7 @@ h1.white-text{
 
 .top-box-who{
   min-width: 100%;
-  background-color: rgb(220, 160, 40);
+  background-color: rgb(240, 155, 50);
   padding: 100px 5% 10px 5%;
   display: flex;
 }
@@ -487,6 +500,72 @@ h1.white-text{
   float: right;
   margin-left: 10px;
 }
+
+.modal-dialog.modal-dialog-centered.modal-fullscreen{
+  margin:20px 50px 20px 50px;
+  width:auto;
+  height: auto;
+}
+
+@media screen and (max-width:850px){
+  .modal-dialog.modal-dialog-centered.modal-fullscreen{
+    margin:20px 20px 20px 20px;
+    width:auto;
+    height: auto;
+  }
+}
+
+.modal.fade.show{
+  padding: 0 !important;
+}
+
+.image-responsive{
+  max-height: calc(100vh - 40px);
+  max-width:  calc(100vw  - 80px);
+}
+
+.carousel-item.light-grey{
+  text-align: center;
+  background-color: #bbbbbb;
+}
+
+.carousel-item.dark-grey{
+  text-align: center;
+  background-color: #878787;
+}
+
+.carousel-control-prev{
+  background-color: black;
+  border-radius: 100%;
+  height:50px;
+  width:50px;
+  top:50%;
+  left:10px;
+}
+
+.carousel-control-next{
+  background-color: black;
+  border-radius: 100%;
+  height:50px;
+  width:50px;
+  top:50%;
+  right:10px;
+}
+
+button.close{
+  font-family: 'europa';
+  color: black;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 300;
+  position: absolute;
+  right:10px;
+  border: 0;
+  z-index:999;
+  text-shadow: none;
+  opacity: 1;
+}
+
 
 .footer{
   padding: 2% 5% 5% 5%;
@@ -536,7 +615,7 @@ h1.white-text{
 
   .contact-icon{
     float: none;
-
+    margin-bottom: -12px;
   }
 
   .contact-row{
@@ -550,8 +629,9 @@ h6{
 }
 
 .me-pic{
+  max-width: 50%;
   float: none;
-  margin: 0;
+  margin: 0 auto 20px auto;
 }
 
 .intro-text{
