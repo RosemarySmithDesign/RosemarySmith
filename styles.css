@@ -436,6 +436,14 @@ h1.white-text{
   height:200px;
 }
 
+.footer-text{
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-align: center;
+
+}
+
 
 
 /* ----------------  PORTFOLIO PAGES   ---------  */
